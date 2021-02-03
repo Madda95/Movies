@@ -13,7 +13,7 @@ const FilmCard = (props) => {
 
   return (
     <Link to={`/movies/${imdbID}`} className={styles.topBox} onMouseOver={() => changeTrailer(TrailerUrl)}>
-      <div className={styles.box} style={{backgroundImage: `url(${Poster})`}}>
+      <div className={styles.box} style={{backgroundImage: `url(${Poster})`}} role='image' alt={`${Title} film`}>
         <div className={styles.hoverBox}>
           <div className={styles.CardTitle}>{Title}</div>
           <div className={styles.description}>{Plot}</div>

@@ -99,7 +99,7 @@ const FilmDetails = (props) => {
           </div>
           <div className={styles.cardImage}>
             {Images && Images.length > 0
-              ? Images.map((image, index) => <div key={index} className={styles.card} style={{ backgroundImage: `url(${image})` }} />) : null}
+              ? Images.map((image, index) => <div role='image' alt={`${Title + index} film scene`} key={index} className={styles.card} style={{ backgroundImage: `url(${image})` }} />) : null}
           </div>
         </div>
       </div>

@@ -55,7 +55,7 @@ const Home = () => {
     if(isNaN(ratings)) {
       ratings = 0;
     }
-    setAverageRatings(ratings)
+    setAverageRatings(ratings.toFixed(2))
 
   }
 
